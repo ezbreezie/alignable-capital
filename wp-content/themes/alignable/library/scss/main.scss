@@ -1,0 +1,14 @@
+/* Main SCSS
+This file is used to compile all of our other neatly organized scss files.
+*/
+
+/* Partials */
+
+@import "partials/mixins";
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/typography";
+
+/* Modules */
+
+@import "modules/splash";
