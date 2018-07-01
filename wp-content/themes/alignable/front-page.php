@@ -1,6 +1,6 @@
 <?php
 /**
- * The Front (Splash) Page template
+ * The Front (Splash) Page Template
  *
  * @package alignable
 **/

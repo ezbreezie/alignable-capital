@@ -1,6 +1,6 @@
 <?php
 /**
- * The Footer template
+ * The Footer Template
  *
  * @package alignable
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * The Header template
+ * The Header Template
  *
  * @package alignable
 **/
