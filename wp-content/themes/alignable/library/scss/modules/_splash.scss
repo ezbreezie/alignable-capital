@@ -1,0 +1,67 @@
+body{
+	&:before{
+		content:'';
+		background-image:url('../images/money.jpg');
+		background-size:cover;
+		position:fixed;
+		width:100%;
+		height:100%;
+		top:0;
+		z-index:-1;
+	}
+}
+
+.about-ac{
+	position:relative;
+	border-top:1px solid $yellow;
+	border-bottom:1px solid $yellow;
+
+	&:before{
+		content:'';
+		background-color:rgba(#ccc,0.4);
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		z-index:-1;
+	}
+
+	// &:before{
+	// 	background:transparent;
+	// }
+
+	.inner{
+		background:rgba($blue,0.85);
+		margin:30px auto;
+		z-index:4;
+		max-width:550px;
+		height:auto;
+		padding:25px 20px;
+
+		@include bp(up768) {
+			padding:35px 30px 60px;
+			margin:50px auto;
+		}
+
+		h1{
+			margin-bottom:15px;
+			color:$yellow;
+		}
+
+		p{
+			color:#fff;
+			line-height: 28px;
+			font-size:16px;
+
+			@include bp(up768) {
+				line-height: 30px;
+				font-size:20px;
+			}
+		}
+	}
+}
+
+.content section{
+	/* Temp until CSS grid */
+	width:50%;
+}

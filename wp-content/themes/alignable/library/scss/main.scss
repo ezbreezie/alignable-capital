@@ -11,4 +11,6 @@ This file is used to compile all of our other neatly organized scss files.
 
 /* Modules */
 
+@import "modules/nav";
 @import "modules/splash";
+@import "modules/footer";

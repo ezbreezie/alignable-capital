@@ -1,0 +1,104 @@
+.header-contact-info{
+	background:$blue;
+	padding: 4px 0 1px;
+	text-align:right;
+
+	a{
+		color:$yellow;
+		font-size:13px;
+		font-family:$header-font;
+		display:inline-block;
+		font-weight:700;
+
+		&.email{
+			margin-right:15px;
+
+			@include bp(down767) {
+				margin-right: -4px;
+			}
+		}
+	}
+
+	svg{
+		display:inline-block;
+		vertical-align:middle;
+
+		path{
+			fill:$yellow;
+		}
+
+		&.icon-phone{
+			width: 20px;
+		    position: relative;
+		    top: -2px;
+		    padding-right: 5px;
+		    height:30px;
+
+		    @include bp(down767) {
+		    	height:25px;
+		    }
+		}
+
+		&.icon-mail{
+			width: 26px;
+		    position: relative;
+		    top: -1px;
+		    padding-right: 5px;
+		    height:30px;
+
+		    @include bp(down767) {
+		    	height:25px;
+		    }
+		}
+	}
+}
+
+nav {
+	padding: 12px 0;
+	background:#fff;
+	height:65px;
+
+	@include bp(up768) {
+		height:78px;
+	}
+
+	img{
+		vertical-align:middle;
+		width:100px;
+		//float:left;
+
+		@include bp(up768) {
+			float:none;
+			width:120px;
+		}
+	}
+	h1{
+		display:inline-block;
+		vertical-align:middle;
+		margin-left:15px;
+		font-size:22px;
+		line-height:25px;
+
+		@include bp(up768) {
+			font-size:25px;
+			line-height:28px;
+		}
+
+		@include bp(up992) {
+			font-size:28px;
+			line-height:30px;
+			margin-left:25px;
+		}
+	}
+
+	.button-container{
+		float: right;
+	    top: 31px;
+	    position: relative;
+	    display:none;
+
+	    @include bp(up768) {
+	    	display:block;
+	    }
+	}
+}

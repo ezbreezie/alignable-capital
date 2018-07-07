@@ -1,0 +1,36 @@
+
+/* Font Stacks */
+
+$header-font: 'Nunito Sans', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+/* Color Stacks */
+
+$blue: #151B6B;
+$gold: #BF9B44;
+$yellow: #F0D874;
+
+.blue{
+	color:$blue;
+}
+
+.gold{
+	color:$gold;
+}
+
+.yellow{
+	color:$yellow;
+}
+
+.container{
+	max-width:1170px;
+	padding:0 15px;
+	margin:0 auto;
+}
+
+.visible-xs{
+	display:block;
+	@include bp(up768) {
+		display:none;
+	}
+}
