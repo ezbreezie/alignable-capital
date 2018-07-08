@@ -9,7 +9,7 @@
 
 <footer>
 	<section class="container">
-		<p>Alignable Capital LLC &disc; &copy; All Rights Reserved. &disc; <a href="#">800-000-000</a> &disc; <a href="#">email@alignablecapital.com</a></p>
+		<p>Alignable Capital LLC &#9643; &copy; All Rights Reserved. <span class="visible-xs">&#9643;</span><br class="hidden-xs"> <a href="#">800-000-000</a> &#9643; <a href="#">email@alignablecapital.com</a></p>
 	</section>
 </footer>
 
