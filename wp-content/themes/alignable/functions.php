@@ -24,13 +24,13 @@ function my_jquery_enqueue() {
 
 function alignable_scripts() {
 	wp_enqueue_style( 'alignable-styles', get_template_directory_uri() . '/library/css/main-min.css' );
-	//wp_enqueue_script( 'alignable-js', get_template_directory_uri() . '/library/js/min/scripts-min.js', array(), false, true  );
+	wp_enqueue_script( 'alignable-js', get_template_directory_uri() . '/library/js/min/scripts-min.js', array(), false, true  );
 }
 add_action( 'wp_enqueue_scripts', 'alignable_scripts' );
 
 
-
-
+/* Hide admin bar. */
+show_admin_bar( false );
 
 
 

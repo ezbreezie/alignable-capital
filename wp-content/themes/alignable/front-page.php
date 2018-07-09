@@ -42,7 +42,7 @@ get_header();
 					</li>
 				</ul>
 			</section>
-			<section class="form">
+			<section class="form" id="apply-form">
 				<h1>Apply Now</h1>
 				<form style="height:600px; width:100%; background:darkblue;">
 				</form>

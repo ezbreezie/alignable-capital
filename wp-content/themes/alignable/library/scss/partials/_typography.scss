@@ -47,7 +47,7 @@ a.btn{
     padding: 12px 18px;
     @include transition(all 0.2s ease-in-out);
 
-    &:hover{
+    &:hover, &:active, &:focus{
     	color:#fff;
     	background:$blue;
     	text-decoration:none;

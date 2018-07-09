@@ -38,7 +38,7 @@
 				<a href="<?php echo get_site_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri() . '/library/images/site-logo.png' ?>" /></a>
 				<h1>Your Source for<br>Private Money</h1>
 				<div class="button-container">
-					<a class="btn" href="#">APPLY NOW</a>
+					<a class="btn" href="#" id="apply-btn">APPLY NOW</a>
 				</div>
 			</div>
 		</nav>
