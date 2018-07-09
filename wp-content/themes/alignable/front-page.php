@@ -18,6 +18,7 @@ get_header();
 		<div class="container content-container">
 			<section class="cta">
 				<ul>
+					<h1 class="title">It's simple</h1>
 					<li>
 						<svg class="icon icon-laptop">
 							<use xlink:href="#icon-laptop"><symbol id="icon-laptop" viewBox="0 0 32 32"><title>laptop</title><path d="M28 22v-16c0-1.1-0.9-2-2-2h-20c-1.1 0-2 0.9-2 2v16h-4v6h32v-6h-4zM20 26h-8v-2h8v2zM26 22h-20v-15.996c0.001-0.001 0.002-0.003 0.004-0.004h19.993c0.001 0.001 0.003 0.002 0.004 0.004v15.996z"></path></symbol></use>
