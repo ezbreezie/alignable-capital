@@ -117,7 +117,7 @@ body{
 				    	display:block;
 				    	max-width: 400px;
 					    width: 100%;
-					    top: 50%;
+					    top: 30%;
 					    left: 50%;
 					    padding:70px 0 40px;
 					    position: absolute;
@@ -171,7 +171,7 @@ body{
 				    		@include bp(up768) {
 							    width: 35px;
 							    height: 35px;
-							    top:-10px;
+							    top:-8px;
 							}
 
 						    path{
@@ -179,7 +179,7 @@ body{
 						    }
 				    	}
 
-				    	h1{
+				    	h2{
 				    		text-transform: uppercase;
 						    font-size: 18px;
 						    margin-bottom: 8px;
@@ -210,6 +210,10 @@ body{
 		    	width:100%;
 		    	margin:0 auto;
 
+		    	@include bp(up992) {
+		    		min-height:1000px;
+		    	}
+
 		    	h1{
 		    		margin:20px 0 15px;
 		    	}
@@ -217,7 +221,185 @@ body{
 		    	form{
 		    		max-width:600px;
 		    		width:100%;
-		    	}
+		    		padding:25px;
+		    		border:1.5px solid $blue;
+		    		font-family:$body-font;
+		    		font-size:14px;
+
+		    		.gform_fields li,
+		    		.ginput_container,
+		    		.gfield_radio,
+		    		li.gfield + li.gfield {
+		    			margin:0;
+		    			padding:0;
+		    			border:none;
+		    		}
+
+		    		.gfield.gsection{
+		    			padding-bottom: 5px!important;
+					    margin-bottom: 20px !important;
+					    border-bottom: 1px solid #e8e8e8 !important;
+		    		}
+
+		    		h2{
+		    			font-family:$header-font;
+		    			color:$blue;
+		    		}
+
+		    		label{
+		    			font-size: 12px;
+					    text-transform: uppercase;
+					    color:#333;
+					    font-weight:700;
+					    letter-spacing: 0;
+					    font-family:$body-font;
+					    margin: 0 0 5px;
+		    		}
+
+		    		.gfield_radio label, .gfield_select{
+		    			text-transform: initial;
+		    			font-size:14px;
+		    			font-weight:300;
+		    			line-height:1em;
+		    		}
+
+		    		.gfield_radio label{
+		    			margin: 0 0 3px 5px;
+		    		}
+
+		    		.ginput_container span {
+		    			//border: 1px solid $gold;
+		    		}
+
+		    		.ginput_container input,
+		    		.ginput_container select {
+		    			border: 1px solid #ccc;
+		    			border-radius:0;
+		    			background:transparent;
+		    			line-height:1em;
+		    			padding: 5px 8px !important;
+
+		    			&:focus, &:active{
+		    				border: 1px solid $gold;
+		    				outline:none;
+		    			}
+		    		}
+
+		    		.ginput_container input{
+		    			margin-bottom:10px;
+		    		}
+
+		    		.ginput_container select{
+		    			-webkit-appearance: none;
+		    			line-height: 20px;
+    					margin: 0;
+    					width:100%;
+		    		}
+
+		    		.hide-label{
+		    			.gfield_label{
+		    				display:none !important;
+		    			}
+		    		}
+
+		    		.gform_button{
+		    			font-family:$header-font;
+						font-size: 14px;
+						font-weight:700;
+					    color: $gold;
+					    cursor:pointer;
+					    letter-spacing:0.5px;
+					    border:1.5px solid $blue;
+					    background:#fff;
+					    line-height:initial !important;
+					    padding: 12px 18px;
+					    margin:0;
+					    @include transition(all 0.2s ease-in-out);
+
+					    &:hover, &:active, &:focus{
+					    	color:#fff;
+					    	outline:none;
+					    	background:$blue;
+					    	text-decoration:none;
+					    }
+		    		}
+
+		    		li#field_1_2, li#field_1_3{
+		    			@include bp(up768) {
+			    			width:50%;
+			    			display:inline-block;
+			    			vertical-align:top;
+			    		}
+		    		}
+
+		    		li#field_1_12, li#field_1_13,
+		    		li#field_1_8, li#field_1_9 {
+					    display: inline-block;
+					    width: 50%;
+
+					    input{
+					    	width:100%;
+					    }
+					}
+
+					li#field_1_12, li#field_1_8{
+						padding-right:8px;
+					}
+
+					li#field_1_13, li#field_1_9{
+						padding-left:8px;
+					}
+
+					li#field_1_5 li {
+					    display: inline-block;
+					    margin-right: 30px;
+					}
+
+					.ginput_container_select, 
+					.ginput_container .address_state {
+						position:relative;
+
+						&:after {
+						    content: '';
+						    height: 0;
+						    top: 50%;
+						    transform: translateY(-50%);
+						    right: 10px;
+						    border-left: 7px solid transparent;
+						    border-right: 7px solid transparent;
+						    border-top: 7px solid #ccc;
+						    position: absolute;
+						}
+					}
+
+					.ginput_container .address_state {
+						&:after {
+						    top: 69%;
+						    transform: translateY(-50%);
+						    right: 16px;
+
+						    @media screen and (max-width: 640px) {
+						    	right:10px;
+						    }
+						}
+					}
+
+		    		.gform_footer{
+		    			padding-bottom:0;
+		    		}
+		    	} //form
+
+		    	.gform_confirmation_wrapper {
+				    font-family: $body-font;
+				    font-size:18px;
+				    line-height:1.2em;
+				    color:#333;
+				    padding:0 0 10px;
+
+				    @include bp(up768) {
+					    padding:20px 0;
+					}
+				}
 		    }
 		}
 	}

@@ -17,6 +17,17 @@ h1{
 	}
 }
 
+h2{
+	font-family: $body-font;
+	font-weight:700;
+	font-size:22px;
+	color:$gold;
+
+	@include bp(up992) {
+		font-size:30px;
+	}
+}
+
 p{
 	font-family: $body-font;
 	font-size:14px;
