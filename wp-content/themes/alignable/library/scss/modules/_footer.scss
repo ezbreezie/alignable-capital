@@ -10,7 +10,7 @@ footer{
 		top:0;
 	}
 	p, a{
-		padding: 50px 0;
+		//padding: 50px 0;
 	    color: #fff;
 	    text-align: center;
 	    font-weight:700;
@@ -19,5 +19,9 @@ footer{
 	    line-height:22px;
 	    z-index:1;
 	    position:relative;
+	}
+
+	p{
+		padding:50px 0;
 	}
 }

@@ -44,7 +44,7 @@ get_header();
 			</section>
 			<section class="form" id="apply-form">
 				<h1>Apply Now</h1>
-				<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
+				<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]');?>
 			</section>
 		</div>
 	</section>
