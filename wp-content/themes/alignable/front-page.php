@@ -11,8 +11,9 @@ get_header();
 
 	.emphasis{
 		font-weight: 800; 
-		text-decoration: underline; 
+		/*text-decoration: underline;*/ 
 		/*font-style:italic;*/
+		border-bottom:1.5px solid #fff;
 	}
 
 	strong{
@@ -25,7 +26,7 @@ get_header();
 	<section class="about-ac">
 		<div class="inner">
 			<h1>Alignable Capital</h1>
-			<p style="margin-bottom:20px;">Do you have a <span class="emphasis">DEAL UNDER CONTRACT</span>, but you do not have the funding to see it through? Look no further!</p>
+			<p style="margin-bottom:20px;">Do you have a <span class="emphasis">DEAL UNDER CONTRACT</span>, but do not have the funding to see it through? Look no further!</p>
 			
 			<p><strong>Alignable Capital, LLC</strong> is <span class="emphasis">YOUR SOURCE FOR PRIVATE MONEY</span> for this deal and <span class="emphasis">ALL</span> of your future deals. We have <strong>GREAT TERMS</strong> and <strong>RATES</strong> that are hard to beat and sure to fit your budget. So, start today and apply <strong>NOW</strong>!</p>
 		</div>
@@ -60,7 +61,7 @@ get_header();
 			</section>
 			<section class="form" id="apply-form">
 				<h1>Apply Now</h1>
-				<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]');?>
+				<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]');?>
 			</section>
 		</div>
 	</section>

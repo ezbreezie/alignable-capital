@@ -11,7 +11,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700|Roboto" rel="stylesheet">
-
+<?php gravity_form_enqueue_scripts(1, true); ?>
 <?php wp_head(); ?>
 </head>
 
